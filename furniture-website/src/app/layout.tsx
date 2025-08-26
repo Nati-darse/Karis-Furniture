@@ -1,33 +1,32 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+// src/app/layout.tsx
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
+// import Header from '@/components/Header'; // We will create this next
+// import Footer from '@/components/Footer'; // We will create this next
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+// Load a font (optional but nice)
+const inter = Inter({ subsets: ['latin'] });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
+// Metadata for the entire site (good for SEO)
 export const metadata: Metadata = {
-  title: "Karis Furniture",
-  description: "All Funiture products ",
+  title: 'Karis Furniture - Where Craftsmanship Meets Elegance',
+  description: 'Karis Furniture creates custom, heirloom-quality woodwork, blending traditional techniques with modern design.',
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={inter.className}>
+        {/* Header appears on every page */}
+        {/* <Header /> */}
+        <main>{children}</main> {/* This is where page content (page.tsx) is injected */}
+        {/* Footer appears on every page */}
+        {/* <Footer /> */}
       </body>
     </html>
   );
