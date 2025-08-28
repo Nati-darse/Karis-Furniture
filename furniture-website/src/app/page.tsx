@@ -1,22 +1,16 @@
 import Image from "next/image";
+import Hero from '@/components/Hero';
+import IntroText from '@/components/IntroText';
+import FeaturedProjects from '@/components/FeaturedProjects';
+import ValueProps from '@/components/ValueProps';
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/karis logo.png"
-          alt="karis furniture logo"
-          width={480}
-          height={64}
-          priority
-        />
-       
-
-       
-      </main>
-      
+    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen pt-20 pb-20 gap-16 sm:p-20">
+       <Hero  />
+       <IntroText />
+       <FeaturedProjects />
+       <ValueProps />
     </div>
   );
 }
