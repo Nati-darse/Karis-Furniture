@@ -52,7 +52,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#431407] text-white">
+    <footer className="bg-[#4f1f11] text-white">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand Column */}
@@ -114,7 +114,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-orange-800 mt-8 pt-8 text-center text-orange-200">
+        <div className="border-t border-red-900 mt-2 pt-4 text-center text-orange-300 font-bold">
           <p>&copy; {currentYear} Karis Furniture. All rights reserved.</p>
         </div>
       </div>

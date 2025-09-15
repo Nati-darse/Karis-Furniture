@@ -33,14 +33,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body className="antialiased"> 
-        {/* This is the root layout that wraps every page */}
-        {/* The Header appears on every page */}
+        
         <Header />
         
         {/* The main content of each page is injected here */}
-        <main>{children}</main>
-        
-        {/* The Footer appears on every page */}
+        <main >
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

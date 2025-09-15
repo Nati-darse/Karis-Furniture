@@ -35,7 +35,8 @@ const itemVariants = {
 
 export default function ValueProps() {
   return (
-    <section className="py-32 px-4 bg-white">
+    <section className="py-32 px-4 sm:px-6 lg:px-8 bg-white relative">
+        {/* <div className="absolute inset-0 opacity-[0.03] bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMwMDAiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMTUgMTVoMzB2MzBIMTV6Ii8+PC9nPjwvZz48L3N2Zz4=')]"></div> */}
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}

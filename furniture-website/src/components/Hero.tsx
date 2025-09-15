@@ -15,11 +15,13 @@ export default function Hero() {
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
   return (
-    <section ref={ref} className="relative h-screen flex items-center justify-center overflow-hidden pt-50"> {/* Added pt-20 for fixed header */}
+    <section
+      ref={ref}
+        className="relative h-screen flex items-center justify-center overflow-hidden pt-20" > {/* Added pt-20 for fixed header */}
       {/* BACKGROUND LAYER - Main workshop image */}
       <motion.div style={{ y }} className="absolute inset-0 z-0">
         <Image
-          src="/images/int%206.jpg" // URL encoded path for "int 6.jpg"
+          src="/images/comb 1.webp" // URL encoded path for "int 6.jpg"
           alt="Karis Furniture Workshop - Master craftsmen creating heirloom quality furniture"
           fill
           style={{ objectFit: 'cover' }}
@@ -37,7 +39,7 @@ export default function Hero() {
         className="absolute inset-0 z-1"
       >
         <Image
-          src="/images/int 8.jpg" // URL encoded path for "int 8.jpg"
+          // src="/images/int 8.jpg" // URL encoded path for "int 8.jpg"
           alt="Wood texture and grain detail"
           fill
           style={{ objectFit: 'cover', mixBlendMode: 'soft-light', opacity: 0.7 }}

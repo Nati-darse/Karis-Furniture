@@ -9,7 +9,7 @@ export default function IntroText() {
   const isInView = useInView(ref, { once: true, margin: '-10%' });
 
   return (
-    <section ref={ref} className="py-16 md:py-24 lg:py-32 bg-gradient-to-b from-amber-50 to-white px-4 relative">
+    <section ref={ref} className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-amber-50 to-white relative">
       {/* Subtle background pattern */}
       <div className="absolute inset-0 opacity-[0.03] bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMwMDAiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMTUgMTVoMzB2MzBIMTV6Ii8+PC9nPjwvZz48L3N2Zz4=')]"></div>
       
