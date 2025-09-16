@@ -38,7 +38,7 @@ export default function Hero() {
         style={{ y: useTransform(scrollYProgress, [0, 1], ['0%', '25%']) }} 
         className="absolute inset-0 z-1"
       >
-        <Image
+        {/* <Image
           // src="/images/int 8.jpg" // URL encoded path for "int 8.jpg"
           alt="Wood texture and grain detail"
           fill
@@ -46,7 +46,7 @@ export default function Hero() {
           priority
           quality={85}
           sizes="100vw"
-        />
+        /> */}
       </motion.div>
 
       {/* TEXT CONTENT LAYER */}
