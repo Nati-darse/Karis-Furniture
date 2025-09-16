@@ -65,7 +65,7 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Navigation Column */}
+          {/* Navigation Column*/}
           <div className="md:col-span-1">
             <h3 className="text-lg font-semibold mb-4">Navigation</h3>
             <ul className="space-y-2">
