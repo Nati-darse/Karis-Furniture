@@ -52,7 +52,7 @@ export default function ProductCard({ product, index }: ProductCardProps) {
             <span className="text-2xl font-bold text-amber-800">
               ${product.price.toLocaleString()}
             </span>
-            <span className="text-sm text-gray-500">
+            <span className="text-sm text-gray-500 hover:text-amber-500">
               View Details →
             </span>
           </div>
