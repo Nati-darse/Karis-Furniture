@@ -39,7 +39,7 @@ export default function Hero() {
         className="absolute inset-0 z-1"
       >
         {/* <Image
-          // src="/images/int 8.jpg" // URL encoded path for "int 8.jpg"
+          src="/images/int 8.jpg" // URL encoded path for "int 8.jpg"
           alt="Wood texture and grain detail"
           fill
           style={{ objectFit: 'cover', mixBlendMode: 'soft-light', opacity: 0.7 }}
