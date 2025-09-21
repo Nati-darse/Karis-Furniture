@@ -14,9 +14,8 @@ export default function Home() {
       <IntroText />
       <FeaturedProjects />
       <ValueProps />
-    <TestimonialGrid/>
+     <TestimonialGrid/>
       <CTA />
-      {/*more sections here later (Testimonials, Process, etc.) */}
     </div>
   );
 }

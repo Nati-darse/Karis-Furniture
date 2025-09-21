@@ -86,7 +86,7 @@ export default function ContactForm() {
 
       {/* Support Info */}
       <div className="text-center mt-12 text-gray-600">
-        <p>Prefer to talk directly? Call us at <strong>(555) 123-4567</strong></p>
+        <p>Prefer to talk directly? Call us at <strong>(+251)-968-339-600</strong></p>
         <p className="text-sm mt-2">We typically respond within 24 hours</p>
       </div>
     </div>

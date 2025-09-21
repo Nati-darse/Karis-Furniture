@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ProcessStep, processSteps } from '@/types/process';
+import {  processSteps } from '@/types/process';
 
 export default function ProcessTimeline() {
   const [activeStep, setActiveStep] = useState(1);
@@ -187,7 +187,7 @@ export default function ProcessTimeline() {
             Ready to Start Your Project?
           </h3>
           <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
-            Experience the Karis difference. Let's create something beautiful together.
+           {" Experience the Karis difference. Let's create something beautiful together."}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-amber-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-amber-700 transition-all duration-300">

@@ -1,4 +1,3 @@
-// src/data/mockProducts.ts
 import { Product } from '@/types/product';
 
 export const mockProducts: Product[] = [

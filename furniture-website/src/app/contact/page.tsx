@@ -8,7 +8,7 @@ export default function ContactPage() {
           Start Your Project
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-          Tell us about your vision. We'll help bring it to life with custom craftsmanship.
+         {"Tell us about your vision. We'll help bring it to life with custom craftsmanship."}
         </p>
       </div>
       

@@ -25,7 +25,7 @@ export default function IntroText() {
           </div>
           
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-light mb-8 text-[#431407] leading-tight">
-            We don't just build furniture
+            {"We don't just build furniture"}
             <motion.span 
               initial={{ opacity: 0, scale: 0.9 }}
               animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}

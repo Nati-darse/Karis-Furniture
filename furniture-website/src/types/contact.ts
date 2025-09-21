@@ -29,11 +29,11 @@ export const interestOptions = [
 ];
 
 export const budgetOptions = [
-  'Under $1,000',
-  '$1,000 - $3,000',
-  '$3,000 - $5,000',
-  '$5,000 - $10,000',
-  '$10,000+'
+  'Under 1,000 Birr',
+  '1,000 - 3,000 Birr',
+  '3,000 - 5,000 Birr',
+  '5,000 - 10,000 Birr',
+  '10,000+ Birr'
 ];
 
 export const timelineOptions = [

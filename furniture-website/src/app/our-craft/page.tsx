@@ -19,8 +19,7 @@ export default function AboutPage() {
             The Story Behind the Craft
           </h1>
           <p className="text-xl md:text-2xl text-amber-100 max-w-3xl mx-auto">
-            For over a decade, we've been turning visions into heirlooms, 
-            one piece of wood at a time.
+            {"For over a decade, we've been turning visions into heirlooms, one piece of wood at a time."}
           </p>
         </div>
       </div>
@@ -40,21 +39,15 @@ export default function AboutPage() {
             </p>
             
             <p className="text-gray-700 leading-relaxed mb-6">
-              The name "Karis" comes from the Greek word for grace and kindness—values that 
-              guide our approach to both our craft and our clients. We believe that beautiful 
-              furniture should be accessible, sustainable, and built to become part of your 
-              family's story.
+              {"The name 'Karis' comes from the Greek word for grace and kindness—values that guide our approach to both our craft and our clients. We believe that beautiful furniture should be accessible, sustainable, and built to become part of your family's story."}
             </p>
             
             <p className="text-gray-700 leading-relaxed mb-6">
-              Today, we continue to blend traditional woodworking techniques with modern design, 
-              creating custom pieces that reflect both our heritage and our vision for the future 
-              of sustainable furniture making.
+             {" Today, we continue to blend traditional woodworking techniques with modern design, creating custom pieces that reflect both our heritage and our vision for the future of sustainable furniture making."}
             </p>
             
             <blockquote className="border-l-4 border-amber-600 pl-6 italic text-gray-700 text-xl my-12">
-              "We don't just build furniture; we craft the soul of your home. 
-              Every piece carries the mark of its maker and the story of its owner."
+             { "We don't just build furniture; we craft the soul of your home. Every piece carries the mark of its maker and the story of its owner."}
             </blockquote>
           </div>
         </div>
@@ -73,7 +66,7 @@ export default function AboutPage() {
             Ready to Create Something Together?
           </h2>
           <p className="text-amber-100 text-xl mb-8">
-            Let's discuss your vision and bring it to life with the care and craftsmanship it deserves.
+           {" Let's discuss your vision and bring it to life with the care and craftsmanship it deserves."}
           </p>
           <button className="bg-white text-amber-600 px-8 py-4 rounded-full font-semibold hover:bg-amber-50 transition-all duration-300 text-lg">
             Start Your Project
