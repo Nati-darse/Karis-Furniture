@@ -49,7 +49,7 @@ export default function ProductInfo({ product }: ProductInfoProps) {
           <div>
             <h3 className="font-semibold text-gray-900 mb-2">Dimensions</h3>
             <p className="text-gray-600">
-              {product.dimensions.width}" W × {product.dimensions.height}" H × {product.dimensions.depth}" D
+             {' {product.dimensions.width}" W × {product.dimensions.height}" H × {product.dimensions.depth}" D '}
             </p>
           </div>
         )}

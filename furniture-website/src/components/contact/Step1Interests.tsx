@@ -14,7 +14,7 @@ export default function Step1Interests({ formData, updateFormData, goToNextStep 
     <div className="space-y-6">
       <div className="text-center">
         <h2 className="text-2xl font-bold text-gray-900">What brings you to Karis Furniture?</h2>
-        <p className="text-gray-600 mt-2">Select what you're interested in</p>
+        <p className="text-gray-600 mt-2">{"Select what you're interested in"}</p>
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-6">

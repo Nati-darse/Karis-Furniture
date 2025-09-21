@@ -59,7 +59,7 @@ export default function TestimonialCard({ testimonial, index, variant = 'default
 
         {/* Comment */}
         <blockquote className="text-gray-700 mb-4 leading-relaxed line-clamp-4">
-          "{testimonial.comment}"
+          {"{testimonial.comment}"}
         </blockquote>
 
         {/* Client Info */}

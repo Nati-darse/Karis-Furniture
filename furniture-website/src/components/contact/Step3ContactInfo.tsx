@@ -40,7 +40,7 @@ export default function Step3ContactInfo({ formData, updateFormData, goToPreviou
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
           </svg>
           <h3 className="text-2xl font-bold mb-2">Thank You!</h3>
-          <p className="text-lg mb-4">We've received your inquiry and will contact you within 24 hours.</p>
+          <p className="text-lg mb-4">We have received your inquiry and will contact you within 24 hours.</p>
           <p className="text-sm text-green-700">A confirmation email has been sent to {formData.email}</p>
         </div>
       </div>

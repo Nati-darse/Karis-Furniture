@@ -19,10 +19,7 @@ export default function MissionStatement() {
           
           <div className="max-w-4xl mx-auto">
             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed mb-8">
-              "To create <span className="text-amber-600 font-semibold">timeless furniture</span> that 
-              bridges generations, using <span className="text-amber-600 font-semibold">sustainable practices</span> and 
-              <span className="text-amber-600 font-semibold"> master craftsmanship</span> to transform 
-              houses into homes filled with stories and soul."
+             {'"To create <span className="text-amber-600 font-semibold">timeless furniture</span> that bridges generations, using <span className="text-amber-600 font-semibold">sustainable practices</span> and <span className="text-amber-600 font-semibold"> master craftsmanship</span> to transform houses into homes filled with stories and soul."'}
             </p>
             
             <div className="w-24 h-1 bg-amber-600 mx-auto mb-8"></div>
