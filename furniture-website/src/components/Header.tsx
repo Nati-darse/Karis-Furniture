@@ -33,6 +33,7 @@ export default function Header() {
                 src="/images/logo.png" // Update this path to your actual logo file!
                 alt="Karis Furniture Logo"
                 fill
+                sizes="(max-width: 768px) 100px, 120px"
                 style={{ objectFit: 'contain' }} // This ensures the whole logo fits within the div
                 priority // Important for above-the-fold images
                 className="hover:opacity-80 transition-opacity"

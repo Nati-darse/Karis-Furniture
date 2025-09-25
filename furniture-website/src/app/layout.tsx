@@ -40,13 +40,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body className="antialiased"> 
-        
-        <Header />        
-        <main >
-          {children}
-        </main>
-        <Footer />
-        <AuthProvider/>
+        <AuthProvider>
+           <Header />        
+              <main >
+                {children}
+              </main>
+            <Footer />
+        </AuthProvider>
       </body>
     </html>
   );
