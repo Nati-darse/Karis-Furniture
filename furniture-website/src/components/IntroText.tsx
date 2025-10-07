@@ -21,7 +21,7 @@ export default function IntroText() {
           className="text-center mb-12"
         >
           <div className="inline-block bg-amber-100 rounded-full px-4 py-2 mb-6">
-            <span className="text-amber-700 font-medium text-sm uppercase tracking-wider">Established 2010</span>
+            <span className="text-amber-700 font-medium text-sm uppercase tracking-wider">Established 2017</span>
           </div>
           
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-light mb-8 text-[#431407] leading-tight">
