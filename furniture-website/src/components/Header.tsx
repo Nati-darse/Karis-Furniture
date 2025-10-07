@@ -61,7 +61,7 @@ export default function Header() {
               href="/contact"
               className="bg-orange-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-orange-700 transition-all duration-300 shadow-lg hover:shadow-orange-200"
             >
-              Get Quote
+             To Order 
             </Link>
           </div>
 
@@ -114,7 +114,7 @@ export default function Header() {
                   onClick={() => setMobileMenuOpen(false)}
                   className="bg-orange-600 text-white px-6 py-3 rounded-full font-semibold text-center mt-4 hover:bg-orange-700 transition-all duration-300"
                 >
-                  Get Quote
+                  Order 
                 </Link>
               </div>
             </motion.div>
