@@ -1,6 +1,8 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { Product, Testimonial } from '@/types/database'
+
 import { supabase } from '@/lib/supabase'
 
 export default function AdminDashboard() {
@@ -12,21 +14,25 @@ export default function AdminDashboard() {
     pendingLeads: 0
   })
 
-  const [products, setProducts] = useState<any[]>([])
-  const [productForm, setProductForm] = useState({
+const [products, setProducts] = useState<Product[]>([]); 
+  const [productForm, setProductForm] = useState<Product>({
     name: '',
     description: '',
-    price: '',
-    image: null as File | null
-  })
+    price: 0,
+    image: null,
+    id: 0,
+    date: '',
+  });
 
-  const [testimonials, setTestimonials] = useState<any[]>([])
-  const [testimonialForm, setTestimonialForm] = useState({
+  const [testimonials, setTestimonials] = useState<Testimonial[]>([]); 
+  const [testimonialForm, setTestimonialForm] = useState<Testimonial>({
     clientName: '',
     product: '',
     response: '',
-    image: null as File | null
-  })
+    image: null,
+    id: 0, 
+    date: '',
+  });
 
   useEffect(() => {
     fetchStats()
@@ -54,16 +60,16 @@ export default function AdminDashboard() {
   }
 
   const handleProductSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    const newProduct = {
-      ...productForm,
-      id: products.length + 1,
-      date: new Date().toISOString()
-    }
-    setProducts(prev => [...prev, newProduct])
-    setProductForm({ name: '', description: '', price: '', image: null })
-    fetchStats()
-  }
+  e.preventDefault();
+  const newProduct: Product = {
+    ...productForm,
+    id: products.length + 1,
+    date: new Date().toISOString(),
+  };
+  setProducts((prev) => [...prev, newProduct]);
+  setProductForm({ name: '', description: '', price: 0 , image: null, id: 0, date: '' });
+  fetchStats();
+};
 
   const handleTestimonialChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
@@ -77,16 +83,16 @@ export default function AdminDashboard() {
   }
 
   const handleTestimonialSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    const newTestimonial = {
-      ...testimonialForm,
-      id: testimonials.length + 1,
-      date: new Date().toISOString()
-    }
-    setTestimonials(prev => [...prev, newTestimonial])
-    setTestimonialForm({ clientName: '', product: '', response: '', image: null })
-    fetchStats()
-  }
+  e.preventDefault();
+  const newTestimonial: Testimonial = {
+    ...testimonialForm,
+    id: testimonials.length + 1,
+    date: new Date().toISOString(),
+  };
+  setTestimonials((prev) => [...prev, newTestimonial]);
+  setTestimonialForm({ clientName: '', product: '', response: '', image: null, id: 0, date: '' });
+  fetchStats();
+};
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -174,8 +180,8 @@ function OverviewTab() {
 
 // ----- Products Tab -----
 type ProductsProps = {
-  products: any[]
-  form: { name: string; description: string; price: string; image: File | null }
+  products: Product[];
+  form: { name: string; description: string; price: number; image: File | null }
   handleChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void
   handleFileChange: (e: React.ChangeEvent<HTMLInputElement>) => void
   handleSubmit: (e: React.FormEvent) => void
@@ -256,7 +262,7 @@ function LeadsTab() {
 }
 
 type TestimonialsProps = {
-  testimonials: any[]
+  testimonials: Testimonial[];
   form: { clientName: string; product: string; response: string; image: File | null }
   handleChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void
   handleFileChange: (e: React.ChangeEvent<HTMLInputElement>) => void
