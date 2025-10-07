@@ -8,21 +8,21 @@ import Link from 'next/link';
 const featuredProjects = [
   {
     id: 1,
-    title: "The River Table",
+    title: "The Table",
     category: "Dining",
-    imageUrl: "/images/int 6.jpg", // Desc: A stunning epoxy river table with a live edge, top-down shot.
+    imageUrl: "/images/int1.jpg",
   },
   {
     id: 2,
     title: "Modern Scandinavian Chair",
     category: "Seating",
-    imageUrl: "/images/int 2.jpg", // Desc: A beautifully crafted oak chair against a white wall.
+    imageUrl: "/images/int2.jpg",
   },
   {
     id: 3,
     title: "Artisanal Cabinetry",
     category: "Storage",
-    imageUrl: "/images/int 9.jpg", // Desc: A floor-to-ceiling, custom-built walnut bookshelf.
+    imageUrl: "/images/int9.jpg",
   },
 ];
 
