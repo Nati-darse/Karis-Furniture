@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link'
-import { Product } from '@/types/Product';
+import { Product } from '@/types/models';
 import ProductImageGallery from './ProductImageGallery';
 import ProductInfo from './ProductInfo';
 import RelatedProducts from './RelatedProducts';

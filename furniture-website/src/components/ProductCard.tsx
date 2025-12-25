@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Product } from '@/types/product';
+import { Product } from '@/types/models';
 
 interface ProductCardProps {
   product: Product;
@@ -29,7 +29,7 @@ export default function ProductCard({ product, index }: ProductCardProps) {
             className="transition-all duration-700 group-hover:scale-105"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-500" />
+          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-500" />
           
           {product.featured && (
             <div className="absolute top-4 left-4 bg-amber-600 text-white px-3 py-1 rounded-full text-sm font-semibold">

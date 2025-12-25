@@ -43,7 +43,7 @@ export const teamMembers: TeamMember[] = [
     name: "Aman Bushie",
     role: "Founder & Master Craftsman",
     bio: "With over 20 years of woodworking experience, Aman founded Karis Furniture to blend traditional craftsmanship with contemporary design. His passion for sustainable woodworking began in his grandfather's workshop and evolved into a lifelong dedication to creating heirloom-quality pieces.",
-    image: "/images/aman-karis.jpg",
+    image: "/images/int1.jpg",
     expertise: ["Traditional Joinery", "Sustainable Design", "Custom Furniture", "Wood Restoration"],
     yearsExperience: 20
   },
@@ -52,7 +52,7 @@ export const teamMembers: TeamMember[] = [
     name: "Sarah Yonas",
     role: "Lead Designer",
     bio: "Sarah brings a keen eye for modern aesthetics and functional design. With a background in architecture and interior design, she ensures every piece not only looks beautiful but fits perfectly in its intended space.",
-    image: "/images/sarah-chen.jpg",
+    image: "/images/int2.jpg",
     expertise: ["Space Planning", "Modern Design", "Material Selection", "3D Rendering"],
     yearsExperience: 12
   },
@@ -61,7 +61,7 @@ export const teamMembers: TeamMember[] = [
     name: "kebede Debru",
     role: "Senior Artisan",
     bio: "Marcus specializes in intricate wood carving and finishing techniques passed down through generations. His attention to detail transforms raw wood into works of art that tell a story.",
-    image: "/images/marcus-rodriguez.jpg",
+    image: "/images/int3.jpg",
     expertise: ["Hand Carving", "French Polish", "Inlay Work", "Surface Finishing"],
     yearsExperience: 15
   }

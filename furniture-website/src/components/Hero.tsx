@@ -21,7 +21,7 @@ export default function Hero() {
       {/* BACKGROUND LAYER - Main workshop image */}
       <motion.div style={{ y }} className="absolute inset-0 z-0">
         <Image
-          src="/images/comb 1.webp" // URL encoded path for "int 6.jpg"
+          src="/images/comb1.webp" // URL encoded path for "int 6.jpg"
           alt="Karis Furniture Workshop - Master craftsmen creating heirloom quality furniture"
           fill
           style={{ objectFit: 'cover' }}

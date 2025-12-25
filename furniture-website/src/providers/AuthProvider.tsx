@@ -1,14 +1,14 @@
 'use client'
 
 import { createContext, useContext, useEffect, useState, ReactNode } from 'react'
-import { User, Session } from '@supabase/supabase-js'
+import { User, Session, AuthError } from '@supabase/supabase-js'
 import { supabase } from '@/lib/supabase'
 
 type AuthContextType = {
   user: User | null
   session: Session | null
   loading: boolean
-  signIn: (email: string, password: string) => Promise<{ error: any }>
+  signIn: (email: string, password: string) => Promise<{ error: AuthError | null }>
   signOut: () => Promise<void>
 }
 
@@ -41,7 +41,7 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
 
     init()
 
-    const { subscription } = supabase.auth.onAuthStateChange((_event, session) => {
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
       setSession(session ?? null)
       setUser(session?.user ?? null)
       setLoading(false)
@@ -52,14 +52,14 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
     }
   }, [])
 
-  const signIn = async (email: string, password: string) => {
+  const signIn = async (email: string, password: string): Promise<{ error: AuthError | null }> => {
     try {
       const { error } = await supabase.auth.signInWithPassword({ email, password })
       if (error) console.error('Login error:', error.message)
       return { error }
     } catch (err) {
       console.error('Unexpected signIn error:', err)
-      return { error: err }
+      return { error: err as AuthError }
     }
   }
 

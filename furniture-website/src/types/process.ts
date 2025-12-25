@@ -35,7 +35,7 @@ export const processSteps: ProcessStep[] = [
     title: "Material Selection",
     description: "Choose from our curated selection of sustainable hardwoods and premium materials. We guide you through grain patterns, finishes, and hardware options.",
     icon: "🌳",
-    image: "/images/process-materials.jpg",
+    image: "/images/int4.jpg",
     imageAlt: "Beautiful wood grains and material samples arranged neatly",
     duration: "2-3 days",
     highlights: ["Sustainably sourced wood", "Finish samples", "Hardware options", "Quality assurance"]
@@ -45,7 +45,7 @@ export const processSteps: ProcessStep[] = [
     title: "Craftsmanship",
     description: "Our master craftsmen bring your design to life using traditional joinery techniques and modern precision tools. Each piece is meticulously handcrafted with attention to detail.",
     icon: "🔨",
-    image: "/images/process-craftsmanship.jpg",
+    image: "/images/int5.jpg",
     imageAlt: "Artisan woodworker crafting furniture in workshop",
     duration: "4-8 weeks",
     highlights: ["Traditional joinery", "Hand-finishing", "Quality control", "Regular updates"]
@@ -55,7 +55,7 @@ export const processSteps: ProcessStep[] = [
     title: "Finishing & Quality Check",
     description: "Your piece receives its final finishes through hand-sanding and application of protective coatings. We conduct rigorous quality checks to ensure perfection.",
     icon: "✨",
-    image: "/images/process-finishing.jpg",
+    image: "/images/int6.jpg",
     imageAlt: "Craftsman applying final finish to wood surface",
     duration: "1-2 weeks",
     highlights: ["Hand-applied finishes", "Multi-stage sanding", "Quality inspection", "Photography"]
@@ -65,7 +65,7 @@ export const processSteps: ProcessStep[] = [
     title: "Delivery & Installation",
     description: "We carefully deliver and install your furniture, ensuring it's perfectly placed and adjusted. Your satisfaction is guaranteed with our white-glove service.",
     icon: "🚚",
-    image: "/images/process-delivery.jpg",
+    image: "/images/int7.jpg",
     imageAlt: "Professional delivery team installing custom furniture",
     duration: "1 day",
     highlights: ["White-glove delivery", "Professional installation", "Final adjustments", "Satisfaction guarantee"]

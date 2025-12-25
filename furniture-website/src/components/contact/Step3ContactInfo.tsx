@@ -1,6 +1,8 @@
  'use client';
 
+import { useState } from 'react';
 import { FormStepProps } from '@/types/contact';
+import emailjs from '@emailjs/browser';
 
 export default function Step3ContactInfo({ formData, updateFormData, goToPreviousStep }: FormStepProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -11,19 +13,42 @@ export default function Step3ContactInfo({ formData, updateFormData, goToPreviou
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+      const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+      const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
-      if (response.ok) {
-        setSubmitStatus('success');
-      } else {
-        throw new Error('Failed to submit');
+      if (!serviceId || !templateId || !publicKey) {
+        const response = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData),
+        });
+        if (response.ok) {
+          setSubmitStatus('success');
+          return;
+        } else {
+          throw new Error('Failed to submit via fallback');
+        }
       }
+
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          to_email: 'amanuelbushie19@gmail.com',
+          from_name: formData.name,
+          from_email: formData.email,
+          phone: formData.phone || '',
+          address: formData.address || '',
+          interest: formData.interest,
+          project_description: formData.projectDescription,
+          budget: formData.budget,
+          timeline: formData.timeline,
+        },
+        publicKey
+      );
+
+      setSubmitStatus('success');
     } catch (error) {
       console.error('Submission error:', error);
       setSubmitStatus('error');

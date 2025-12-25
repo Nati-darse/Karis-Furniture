@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Product, ProductFilters } from '@/types/product';
+import { Product, ProductFilters } from '@/types/models';
 import ProductCard from './ProductCard';
 
 interface ProductGridProps {

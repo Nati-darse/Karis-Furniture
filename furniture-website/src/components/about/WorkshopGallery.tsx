@@ -5,22 +5,22 @@ import { motion } from 'framer-motion';
 
 const workshopImages = [
   {
-    src: "/images/workshop-1.jpg",
+    src: "/images/int1.jpg",
     alt: "Karis Furniture workshop showing organized tools and workbenches",
     caption: "Our main workshop space where ideas come to life"
   },
   {
-    src: "/images/workshop-2.jpg",
+    src: "/images/int2.jpg",
     alt: "Close-up of woodworking tools and machinery",
     caption: "Precision tools for perfect craftsmanship"
   },
   {
-    src: "/images/workshop-3.jpg",
+    src: "/images/int3.jpg",
     alt: "Artisan working on a furniture piece",
     caption: "Hand-finishing techniques that make each piece unique"
   },
   {
-    src: "/images/workshop-4.jpg",
+    src: "/images/int4.jpg",
     alt: "Wood storage area with various timber types",
     caption: "Sustainably sourced wood selection"
   }

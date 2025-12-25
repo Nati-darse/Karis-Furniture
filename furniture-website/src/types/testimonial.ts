@@ -43,7 +43,7 @@ export const testimonials: Testimonial[] = [
     project: "Custom Bookshelf Unit",
     rating: 5,
     comment: "This bookshelf is a work of art! It fits perfectly in our space and holds all our books with elegance. The team was wonderful to work with—patient, creative, and incredibly skilled. Worth every penny for heirloom quality.",
-    image: "/images/testimonial-bookshelf.jpg",
+    image: "/images/int8.jpg",
     imageAlt: "Custom built bookshelf filled with books and decor",
     location: "San Francisco, CA",
     date: "December 2023",
@@ -55,7 +55,7 @@ export const testimonials: Testimonial[] = [
     project: "Outdoor Teak Bench & Table",
     rating: 5,
     comment: "Our outdoor setup has received so many compliments! The teak has weathered beautifully and the construction is rock solid. Perfect for family gatherings and enjoying our garden.",
-    image: "/images/testimonial-outdoor.jpg",
+    image: "/images/out1.jpg",
     imageAlt: "Teak outdoor furniture in a beautiful garden setting",
     location: "Austin, TX",
     date: "November 2023"
@@ -66,7 +66,7 @@ export const testimonials: Testimonial[] = [
     project: "Bedroom Set Restoration",
     rating: 5,
     comment: "They restored my grandmother's bedroom set to better than original condition. The care and respect they showed for this family heirloom was touching. Now it will last for another generation.",
-    image: "/images/testimonial-bedroom.jpg",
+    image: "/images/int9.jpg",
     imageAlt: "Restored vintage bedroom set in a cozy room",
     location: "Boston, MA",
     date: "February 2024"
@@ -77,7 +77,7 @@ export const testimonials: Testimonial[] = [
     project: "Home Office Furniture",
     rating: 5,
     comment: "Working from home has never been more enjoyable. The desk and shelving are both functional and beautiful. The team understood exactly what we needed for our space and workflow.",
-    image: "/images/testimonial-office.jpg",
+    image: "/images/int1.jpg",
     imageAlt: "Custom home office setup with desk and shelving",
     location: "Denver, CO",
     date: "October 2023"

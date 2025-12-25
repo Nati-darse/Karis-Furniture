@@ -22,7 +22,7 @@ const featuredProjects = [
     id: 3,
     title: "Artisanal Cabinetry",
     category: "Storage",
-    imageUrl: "/images/int9.jpg",
+    imageUrl: "/images/int3.jpg",
   },
 ];
 
@@ -42,7 +42,7 @@ const itemVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: "easeOut" },
+    transition: { duration: 0.6 },
   },
 };
 
@@ -88,7 +88,7 @@ export default function FeaturedProjects() {
                   style={{ objectFit: 'cover' }}
                   className="transition-all duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-500 flex items-end">
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-500 flex items-end">
                   <div className="p-8 translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
                     <p className="text-orange-300 font-semibold">{featuredProjects[0].category}</p>
                     <h3 className="text-3xl font-bold text-white">{featuredProjects[0].title}</h3>
@@ -111,7 +111,7 @@ export default function FeaturedProjects() {
                     style={{ objectFit: 'cover' }}
                     className="transition-all duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-500 flex items-end">
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-500 flex items-end">
                     <div className="p-6 translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
                       <p className="text-orange-300 font-semibold text-sm">{featuredProjects[1].category}</p>
                       <h3 className="text-xl font-bold text-white">{featuredProjects[1].title}</h3>
@@ -132,7 +132,7 @@ export default function FeaturedProjects() {
                     style={{ objectFit: 'cover' }}
                     className="transition-all duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-500 flex items-end">
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-500 flex items-end">
                     <div className="p-6 translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
                       <p className="text-orange-300 font-semibold text-sm">{featuredProjects[2].category}</p>
                       <h3 className="text-xl font-bold text-white">{featuredProjects[2].title}</h3>
